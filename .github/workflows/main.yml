@@ -1,0 +1,16 @@
+name: My Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    name: testCalculus
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Run action
+      # Put your action repo here
+      uses: me/myaction@master
+
+      # Put an example of your mandatory inputs here
+      with:
+        myInput: world
+
