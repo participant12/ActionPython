@@ -8,6 +8,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Run action
       # Put your action repo here
+      test_calculette.py
       uses: me/myaction@master
 
       # Put an example of your mandatory inputs here
